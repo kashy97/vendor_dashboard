@@ -21,15 +21,12 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<DashBoard />} />
-        <Route path="profile" element={<Profile />}>
-          <Route path=":edit" element={<Team />} />
-        </Route>
-        <Route path="vendors" element={<Vendors />}>
-          <Route path=":add" element={<VAdd />} />
-        </Route>
-        <Route path="invoices" element={<Orders />}>
-          <Route path=":add" element={<IAdd />} />
-        </Route>
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/edit" element={<Team />} />
+        <Route path="/vendors" element={<Vendors />} />
+        <Route path="/vendors/add" element={<VAdd />} />
+        <Route path="/invoices" element={<Orders />} />
+        <Route path="/invoices/add" element={<IAdd />} />
         <Route path="/release_orders" element={<ROrders />} />
       </Routes>
     </div>
