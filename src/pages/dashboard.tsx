@@ -51,7 +51,7 @@ const DashBoard = (props: any) => {
     return (
         <Paper sx={{width:1}}>
             <Typography sx={{ padding: 5 }} variant='h4'>Dashboard</Typography>
-            <Box sx={{ padding: 10, display: 'flex', rowGap:10, columnGap: 10, width: '100%', flexFlow: 'row wrap' }} >
+            <Box sx={{ padding: 10, display: 'flex', rowGap:10, columnGap: 10, flexFlow: 'row wrap' }} >
                 <div>
                     <Card elevation={3} sx={{ minWidth: 700, borderRadius: 5, minHeight: '50vh' }}>
                         <CardContent>

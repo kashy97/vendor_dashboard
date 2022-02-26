@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap&rel=preload');
+
 .App {
   min-height: 50vh;
+  width: 100%;
 }
 
 .paper {
-  margin: 50px;
+  
 }
 
 .vendors {
@@ -17,7 +20,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
   min-height: 100vh;
   margin: 30px;
   padding: 5%;
@@ -58,6 +60,7 @@
 
 .footer {
   align-items: center;
+  width: 100%;
   padding: 50px;
 }
 
@@ -65,5 +68,5 @@
   padding: 5%;
   display: flex;
   column-gap: 10px;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }

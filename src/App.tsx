@@ -13,10 +13,18 @@ import Vendors from "./pages/vendors";
 import VAdd from "./pages/vendors_add";
 import ROrders from "./pages/release_orders";
 import Footer from "./components/Footer";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: "Poppins, Sans-serif",
+    },
+  });
+
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
       <NavBar />
       {/* <Flow /> */}
       <Routes>
@@ -31,6 +39,7 @@ function App() {
         <Route path="/release_orders" element={<ROrders />} />
       </Routes>
       <Footer />
+      </ThemeProvider>
     </div>
   );
 }
