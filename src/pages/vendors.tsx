@@ -3,7 +3,7 @@ import React from 'react'
 
 const Vendors = () => {
   return (
-    <div>
+    <div className="vendors">
         <Typography variant="h4">Vendors</Typography>
         <br />
         <Button href="/vendors/add" variant="contained" color="info">Add Vendor</Button>

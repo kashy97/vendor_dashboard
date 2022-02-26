@@ -123,7 +123,6 @@ const NavBar = () => {
               Purchase Order
             </Button>
             <Button
-              variant="contained"
               href="/release_orders"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}

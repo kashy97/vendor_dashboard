@@ -1,9 +1,19 @@
 .App {
   min-height: 50vh;
 }
+
 .paper {
   margin: 50px;
 }
+
+.vendors {
+  padding: 5%;
+}
+
+.vendors_add {
+  padding: 5%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,11 +22,14 @@
   margin: 30px;
   padding: 5%;
 }
+
 .title {
-  align-items: center;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .profile {
+  padding: 5%;
   display: flex;
   row-gap: 2rem;
   flex-direction: column;
@@ -27,6 +40,30 @@
   column-gap: 2rem;
 }
 
+.invoices_add{
+  padding:5%;
+}
+
 .edit_team h4 {
   text-align: center;
+}
+
+.release_order{
+  padding:5%;
+}
+
+.edit_team {
+  padding: 5%;
+}
+
+.footer {
+  align-items: center;
+  padding: 50px;
+}
+
+.navigation_purchase {
+  padding: 5%;
+  display: flex;
+  column-gap: 10px;
+  flex-flow: row nowrap;
 }

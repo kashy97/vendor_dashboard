@@ -4,7 +4,7 @@ import React from "react";
 const Team = () => {
   return (
     <div className='edit_team'>
-      <Typography variant="h4">Edit team</Typography>
+      <Typography sx={{padding:5}} variant="h4">Edit team</Typography>
       <Stack spacing={2}>
         <TextField id="name" label="Name" type="text" variant="outlined" />
         <TextField

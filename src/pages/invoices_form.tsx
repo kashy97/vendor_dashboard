@@ -46,7 +46,7 @@ const IAdd = () => {
       noValidate
       autoComplete="off"
     >
-      <div>
+      <div className="invoices_add">
         <Stack spacing={2}>
           <Typography variant="h4">Add Purchase Order</Typography>
           <Typography variant="h6">Vendor</Typography>

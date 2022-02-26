@@ -47,7 +47,7 @@ const ROrders = () => {
     console.log("working");
   };
   return (
-    <div>
+    <div className="release_order">
       <Box
         component="form"
         sx={{
@@ -56,7 +56,7 @@ const ROrders = () => {
         noValidate
         autoComplete="off"
       >
-        <Typography variant="h4">Release Order Entry form</Typography>
+        <Typography sx={{paddingButtom:5}} variant="h4">Release Order Entry form</Typography>
         <Stack spacing={10} direction="row">
           <Stack spacing={2}>
             <TextField

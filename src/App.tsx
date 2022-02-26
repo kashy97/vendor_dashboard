@@ -12,6 +12,7 @@ import Orders from "./pages/invoices";
 import Vendors from "./pages/vendors";
 import VAdd from "./pages/vendors_add";
 import ROrders from "./pages/release_orders";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/invoices/add" element={<IAdd />} />
         <Route path="/release_orders" element={<ROrders />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

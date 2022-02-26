@@ -100,7 +100,6 @@ const Login = () => {
   return (
     <div className="paper">
       <Paper elevation={5}>
-        <div className="container">
           <div className="title">
             <Typography color="primary"><u><b>LOGIN</b></u></Typography>
             <div className="button">
@@ -114,7 +113,8 @@ const Login = () => {
                 User
               </Button>
             </div>
-          </div>
+            </div>
+          <div className="container">
           <Accordion
             expanded={expanded === "register"}
             onChange={handleChange("register")}
