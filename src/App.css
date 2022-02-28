@@ -2,11 +2,6 @@
 
 .App {
   min-height: 50vh;
-  width: 100%;
-}
-
-.paper {
-  
 }
 
 .vendors {
@@ -56,6 +51,11 @@
 
 .edit_team {
   padding: 5%;
+}
+
+.datagrid{
+  height: 400;
+  flex-grow: 1;
 }
 
 .footer {

@@ -26,7 +26,7 @@ const Orders = (props:any) => {
       <Typography variant="h4">Purchase Orders /</Typography>
       <Button variant="contained" color="primary" href="/invoices/add">Add Purchase Order</Button>
       </div>
-      <div style={{ height: 400, flexGrow: 1 }}>
+      <div className="datagrid">
         <DataGrid rows={tableData} columns={columns} pageSize={5} />
       </div>
     </div>

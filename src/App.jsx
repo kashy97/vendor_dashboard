@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
+import { Navigate } from "react-router";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
+import Login from "./auth/login_new";
 import DashBoard from "./pages/dashboard";
 import Profile from "./pages/profile";
 import NavBar from "./components/Navbar";
@@ -14,6 +15,7 @@ import VAdd from "./pages/vendors_add";
 import ROrders from "./pages/release_orders";
 import Footer from "./components/Footer";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Register from "./auth/register";
 
 function App() {
   const theme = createTheme({
@@ -25,20 +27,24 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-      <NavBar />
-      {/* <Flow /> */}
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<DashBoard />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/profile/edit" element={<Team />} />
-        <Route path="/vendors" element={<Vendors />} />
-        <Route path="/vendors/add" element={<VAdd />} />
-        <Route path="/invoices" element={<Orders />} />
-        <Route path="/invoices/add" element={<IAdd />} />
-        <Route path="/release_orders" element={<ROrders />} />
-      </Routes>
-      <Footer />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+
+        <NavBar />
+        {/* <Flow /> */}
+        <Routes>
+          <Route path="/" element={<DashBoard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/edit" element={<Team />} />
+          <Route path="/vendors" element={<Vendors />} />
+          <Route path="/vendors/add" element={<VAdd />} />
+          <Route path="/invoices" element={<Orders />} />
+          <Route path="/invoices/add" element={<IAdd />} />
+          <Route path="/release_orders" element={<ROrders />} />
+        </Routes>
+        <Footer />
       </ThemeProvider>
     </div>
   );
