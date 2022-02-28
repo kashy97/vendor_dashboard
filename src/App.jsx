@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Navigate } from "react-router";
 import { Routes, Route } from "react-router-dom";
 import Login from "./auth/login_new";
 import DashBoard from "./pages/dashboard";
